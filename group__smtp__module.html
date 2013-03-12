@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.3.1"/>
-<title>WIZlib Library API: Main Page</title>
+<title>WIZlib Library API: SMTP</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -39,7 +39,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </script>
   <div id="navrow1" class="tabs">
     <ul class="tablist">
-      <li class="current"><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
@@ -79,45 +79,110 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">WIZlib Library API Documentation</div>  </div>
+<div class="title">SMTP<div class="ingroups"><a class="el" href="group__protocol__module.html">Network Protocols</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1><a class="anchor" id="intro"></a>
-TEST</h1>
-<p><b>TEST</b> test</p>
-<ul>
-<li>abc </li>
-</ul>
-<h1><a class="anchor" id="Program"></a>
-TEST</h1>
-<ul>
-<li>abc</li>
-<li>abc</li>
-</ul>
-<div class="fragment"><div class="line">Test()</div>
-<div class="line">{</div>
-<div class="line">    Callback();</div>
-<div class="line">}</div>
-</div><!-- fragment --> <h1><a class="anchor" id="INOUTPUT"></a>
-TEST</h1>
-<ul>
-<li>acb</li>
-<li>abc </li>
-</ul>
-<h1><a class="anchor" id="CREATEINFO"></a>
-TEST</h1>
-<ul>
-<li>abc</li>
-<li>abc </li>
-</ul>
-<h1><a class="anchor" id="MODIFYINFO"></a>
-TEST</h1>
-<ul>
-<li>abc</li>
-<li>abc </li>
-</ul>
-</div></div><!-- contents -->
+
+<p>Simple Mail Transfer Protocol.  
+<a href="#details">More...</a></p>
+<div class="dynheader">
+Collaboration diagram for SMTP:</div>
+<div class="dyncontent">
+<center><table><tr><td><img src="group__smtp__module.png" border="0" alt="" usemap="#group____smtp____module"/>
+<map name="group____smtp____module" id="group____smtp____module">
+<area shape="rect" id="node2" href="group__protocol__module.html" title="&#45;." alt="" coords="5,5,133,32"/></map>
+</td></tr></table></center>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ga71875dc3dd69c9a4e5c737f31ec56958"><td class="memItemLeft" align="right" valign="top">uint8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__smtp__module.html#ga71875dc3dd69c9a4e5c737f31ec56958">send_mail</a> (uint8 s, uint8 *sender, uint8 *passwd, uint8 *recipient, uint8 *subject, uint8 *content, uint8 *pSip)</td></tr>
+<tr class="memdesc:ga71875dc3dd69c9a4e5c737f31ec56958"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send email.  <a href="#ga71875dc3dd69c9a4e5c737f31ec56958">More...</a><br/></td></tr>
+<tr class="separator:ga71875dc3dd69c9a4e5c737f31ec56958"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<p>Simple Mail Transfer Protocol. </p>
+<h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="ga71875dc3dd69c9a4e5c737f31ec56958"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8 send_mail </td>
+          <td>(</td>
+          <td class="paramtype">uint8&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8 *&#160;</td>
+          <td class="paramname"><em>sender</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8 *&#160;</td>
+          <td class="paramname"><em>passwd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8 *&#160;</td>
+          <td class="paramname"><em>recipient</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8 *&#160;</td>
+          <td class="paramname"><em>subject</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8 *&#160;</td>
+          <td class="paramname"><em>content</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8 *&#160;</td>
+          <td class="paramname"><em>pSip</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Send email. </p>
+<p>This function send mail and parses the reply from mail server.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>a socket number </td></tr>
+    <tr><td class="paramname">sender</td><td>pointer to the sender </td></tr>
+    <tr><td class="paramname">passwd</td><td>pointer to the password </td></tr>
+    <tr><td class="paramname">recipient</td><td>pointer to the recipient </td></tr>
+    <tr><td class="paramname">subject</td><td>pointer to the subject of mail </td></tr>
+    <tr><td class="paramname">content</td><td>pointer to the content of mail </td></tr>
+    <tr><td class="paramname">pSip</td><td>pointer to the server ip </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>RET_OK: Success </dd>
+<dd>
+RET_NOK: Error </dd></dl>
+
+<p>Definition at line <a class="el" href="smtp_8c_source.html#l00079">79</a> of file <a class="el" href="smtp_8c_source.html">smtp.c</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated on Sun Mar 10 2013 15:02:28 for WIZlib Library API by &#160;<a href="http://www.doxygen.org/index.html">

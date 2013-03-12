@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.3.1"/>
-<title>WIZlib Library API: Main Page</title>
+<title>WIZlib Library API: Macro Util</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -39,7 +39,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </script>
   <div id="navrow1" class="tabs">
     <ul class="tablist">
-      <li class="current"><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
@@ -79,48 +79,57 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#define-members">Macros</a> &#124;
+<a href="#typedef-members">Typedefs</a>  </div>
   <div class="headertitle">
-<div class="title">WIZlib Library API Documentation</div>  </div>
+<div class="title">Macro Util<div class="ingroups"><a class="el" href="group__common__util.html">Utilities</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1><a class="anchor" id="intro"></a>
-TEST</h1>
-<p><b>TEST</b> test</p>
-<ul>
-<li>abc </li>
-</ul>
-<h1><a class="anchor" id="Program"></a>
-TEST</h1>
-<ul>
-<li>abc</li>
-<li>abc</li>
-</ul>
-<div class="fragment"><div class="line">Test()</div>
-<div class="line">{</div>
-<div class="line">    Callback();</div>
-<div class="line">}</div>
-</div><!-- fragment --> <h1><a class="anchor" id="INOUTPUT"></a>
-TEST</h1>
-<ul>
-<li>acb</li>
-<li>abc </li>
-</ul>
-<h1><a class="anchor" id="CREATEINFO"></a>
-TEST</h1>
-<ul>
-<li>abc</li>
-<li>abc </li>
-</ul>
-<h1><a class="anchor" id="MODIFYINFO"></a>
-TEST</h1>
-<ul>
-<li>abc</li>
-<li>abc </li>
-</ul>
-</div></div><!-- contents -->
+
+<p>Simple Macro Utilities.  
+<a href="#details">More...</a></p>
+<div class="dynheader">
+Collaboration diagram for Macro Util:</div>
+<div class="dyncontent">
+<center><table><tr><td><img src="group__macro__util.png" border="0" alt="" usemap="#group____macro____util"/>
+<map name="group____macro____util" id="group____macro____util">
+<area shape="rect" id="node2" href="group__common__util.html" title="Utilities for common use." alt="" coords="6,5,71,32"/></map>
+</td></tr></table></center>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:gafaf02bb124883e4328f52aca03957139"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gafaf02bb124883e4328f52aca03957139"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__macro__util.html#gafaf02bb124883e4328f52aca03957139">MEM_FREE</a>(mem_p)&#160;&#160;&#160;do{ if(mem_p) { free(mem_p); mem_p = NULL; } }while(0)</td></tr>
+<tr class="memdesc:gafaf02bb124883e4328f52aca03957139"><td class="mdescLeft">&#160;</td><td class="mdescRight">If pointer is not NULL, free it and set to NULL. <br/></td></tr>
+<tr class="separator:gafaf02bb124883e4328f52aca03957139"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3ababc7e4e4387c7ecc212489515c34a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga3ababc7e4e4387c7ecc212489515c34a"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__macro__util.html#ga3ababc7e4e4387c7ecc212489515c34a">BITSET</a>(var_v, bit_v)&#160;&#160;&#160;(var_v |= bit_v)</td></tr>
+<tr class="memdesc:ga3ababc7e4e4387c7ecc212489515c34a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set bit in variable. <br/></td></tr>
+<tr class="separator:ga3ababc7e4e4387c7ecc212489515c34a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae5f5df34370b5322aa492865dbd2509d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gae5f5df34370b5322aa492865dbd2509d"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__macro__util.html#gae5f5df34370b5322aa492865dbd2509d">BITCLR</a>(var_v, bit_v)&#160;&#160;&#160;(var_v &amp;= ~(bit_v))</td></tr>
+<tr class="memdesc:gae5f5df34370b5322aa492865dbd2509d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear bit in variable. <br/></td></tr>
+<tr class="separator:gae5f5df34370b5322aa492865dbd2509d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:ga35a6f98828dd4d41a1165e1018ef66b7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga35a6f98828dd4d41a1165e1018ef66b7"></a>
+typedef union long2char_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__macro__util.html#ga35a6f98828dd4d41a1165e1018ef66b7">long2char</a></td></tr>
+<tr class="memdesc:ga35a6f98828dd4d41a1165e1018ef66b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">General purpose type change union (32bit &lt;-&gt; 8bit). <br/></td></tr>
+<tr class="separator:ga35a6f98828dd4d41a1165e1018ef66b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf6f323c7d73c0ed3b6f317ec5e22973b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaf6f323c7d73c0ed3b6f317ec5e22973b"></a>
+typedef union short2char_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__macro__util.html#gaf6f323c7d73c0ed3b6f317ec5e22973b">short2char</a></td></tr>
+<tr class="memdesc:gaf6f323c7d73c0ed3b6f317ec5e22973b"><td class="mdescLeft">&#160;</td><td class="mdescRight">General purpose type change union (16bit &lt;-&gt; 8bit). <br/></td></tr>
+<tr class="separator:gaf6f323c7d73c0ed3b6f317ec5e22973b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<p>Simple Macro Utilities. </p>
+</div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 10 2013 15:02:28 for WIZlib Library API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Mar 10 2013 15:02:27 for WIZlib Library API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

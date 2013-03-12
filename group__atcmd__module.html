@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.3.1"/>
-<title>WIZlib Library API: Main Page</title>
+<title>WIZlib Library API: ATcmd</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -39,7 +39,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </script>
   <div id="navrow1" class="tabs">
     <ul class="tablist">
-      <li class="current"><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
@@ -79,48 +79,85 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">WIZlib Library API Documentation</div>  </div>
+<div class="title">ATcmd<div class="ingroups"><a class="el" href="group__application__module.html">Application Modules</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1><a class="anchor" id="intro"></a>
-TEST</h1>
-<p><b>TEST</b> test</p>
-<ul>
-<li>abc </li>
-</ul>
-<h1><a class="anchor" id="Program"></a>
-TEST</h1>
-<ul>
-<li>abc</li>
-<li>abc</li>
-</ul>
-<div class="fragment"><div class="line">Test()</div>
-<div class="line">{</div>
-<div class="line">    Callback();</div>
-<div class="line">}</div>
-</div><!-- fragment --> <h1><a class="anchor" id="INOUTPUT"></a>
-TEST</h1>
-<ul>
-<li>acb</li>
-<li>abc </li>
-</ul>
-<h1><a class="anchor" id="CREATEINFO"></a>
-TEST</h1>
-<ul>
-<li>abc</li>
-<li>abc </li>
-</ul>
-<h1><a class="anchor" id="MODIFYINFO"></a>
-TEST</h1>
-<ul>
-<li>abc</li>
-<li>abc </li>
-</ul>
-</div></div><!-- contents -->
+
+<p>AT Command Module.  
+<a href="#details">More...</a></p>
+<div class="dynheader">
+Collaboration diagram for ATcmd:</div>
+<div class="dyncontent">
+<center><table><tr><td><img src="group__atcmd__module.png" border="0" alt="" usemap="#group____atcmd____module"/>
+<map name="group____atcmd____module" id="group____atcmd____module">
+<area shape="rect" id="node1" href="group__application__module.html" title="&#45;." alt="" coords="5,5,144,32"/></map>
+</td></tr></table></center>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:gab7296fc3d7856da55f0dc401f3bde11d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__atcmd__module.html#gab7296fc3d7856da55f0dc401f3bde11d">atc_init</a> (void)</td></tr>
+<tr class="memdesc:gab7296fc3d7856da55f0dc401f3bde11d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize ATCMD Module.  <a href="#gab7296fc3d7856da55f0dc401f3bde11d">More...</a><br/></td></tr>
+<tr class="separator:gab7296fc3d7856da55f0dc401f3bde11d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8a5135d96658cbd51c65ab5d1eb3bb8b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__atcmd__module.html#ga8a5135d96658cbd51c65ab5d1eb3bb8b">atc_run</a> (void)</td></tr>
+<tr class="memdesc:ga8a5135d96658cbd51c65ab5d1eb3bb8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">ATCMD Module Handler.  <a href="#ga8a5135d96658cbd51c65ab5d1eb3bb8b">More...</a><br/></td></tr>
+<tr class="separator:ga8a5135d96658cbd51c65ab5d1eb3bb8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<p>AT Command Module. </p>
+<p>You can use the 'Serial to Ethernet' function by using <br/>
+ the AT Command module, and through the terminal, you can<br/>
+ change the settings of the device. </p>
+<h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="gab7296fc3d7856da55f0dc401f3bde11d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void atc_init </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialize ATCMD Module. </p>
+<p>This should be called before <a class="el" href="group__atcmd__module.html#ga8a5135d96658cbd51c65ab5d1eb3bb8b">atc_run</a> </p>
+
+<p>Definition at line <a class="el" href="atcmd_8c_source.html#l00096">96</a> of file <a class="el" href="atcmd_8c_source.html">atcmd.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga8a5135d96658cbd51c65ab5d1eb3bb8b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void atc_run </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ATCMD Module Handler. </p>
+<p>If you use ATCMD Module, this should run in the main loop </p>
+
+<p>Definition at line <a class="el" href="atcmd_8c_source.html#l00126">126</a> of file <a class="el" href="atcmd_8c_source.html">atcmd.c</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 10 2013 15:02:28 for WIZlib Library API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Mar 10 2013 15:02:27 for WIZlib Library API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

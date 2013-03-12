@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.3.1"/>
-<title>WIZlib Library API: Main Page</title>
+<title>WIZlib Library API: TEST PAGE</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -39,8 +39,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </script>
   <div id="navrow1" class="tabs">
     <ul class="tablist">
-      <li class="current"><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li class="current"><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
@@ -63,7 +63,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       </li>
     </ul>
   </div>
-</div><!-- top -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -78,49 +77,69 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
+</div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">WIZlib Library API Documentation</div>  </div>
+<div class="title">TEST PAGE </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1><a class="anchor" id="intro"></a>
-TEST</h1>
-<p><b>TEST</b> test</p>
+<div class="textblock"><p>Test Page</p>
+<h1><a class="anchor" id="API"></a>
+API Reference Usage</h1>
+<h3>C++ Programmers:</h3>
+<p>Use <a href="hierarchy.html">Class Hierarchy</a> or <a href="classes.html">Alphabetical List </a> or <a href="annotated.html">Compound List</a> to find the class you are interested in. For example, to find BreakIterator, you can go to the <a href="classes.html">Alphabetical List</a>, then click on "BreakIterator". Once you are at the class, you will find an inheritance chart, a list of the public members, a detailed description of the class, then detailed member descriptions.</p>
+<h3>C Programmers:</h3>
+<p>Use <a href="#Module">Module List</a> or <a href="globals.html">File Members</a> to find a list of all the functions and constants. For example, to find BreakIterator functions you would click on <a href="files.html">File List</a>, then find "ubrk.h" and click on it. You will find descriptions of Defines, Typedefs, Enumerations, and Functions, with detailed descriptions below. If you want to find a specific function, such as ubrk_next(), then click first on <a href="globals.html">File Members</a>, then use your browser Find dialog to search for "ubrk_next()".</p>
+<h3>API References for Previous Releases</h3>
+<p>The API References for each release of ICU are also available as a zip file from the ICU <a href="http://site.icu-project.org/download">download page</a>.</p>
+<hr/>
+<h2>Architecture (User's Guide)</h2>
 <ul>
-<li>abc </li>
+<li>
+<a href="http://userguide.icu-project.org/">Introduction</a> </li>
+<li>
+<a href="http://userguide.icu-project.org/i18n">Internationalization</a> </li>
+<li>
+<a href="http://userguide.icu-project.org/design">Locale Model, Multithreading, Error Handling, etc.</a> </li>
+<li>
+<a href="http://userguide.icu-project.org/conversion">Conversion</a> </li>
 </ul>
-<h1><a class="anchor" id="Program"></a>
-TEST</h1>
-<ul>
-<li>abc</li>
-<li>abc</li>
-</ul>
-<div class="fragment"><div class="line">Test()</div>
-<div class="line">{</div>
-<div class="line">    Callback();</div>
-<div class="line">}</div>
-</div><!-- fragment --> <h1><a class="anchor" id="INOUTPUT"></a>
-TEST</h1>
-<ul>
-<li>acb</li>
-<li>abc </li>
-</ul>
-<h1><a class="anchor" id="CREATEINFO"></a>
-TEST</h1>
-<ul>
-<li>abc</li>
-<li>abc </li>
-</ul>
-<h1><a class="anchor" id="MODIFYINFO"></a>
-TEST</h1>
-<ul>
-<li>abc</li>
-<li>abc </li>
-</ul>
+<hr/>
+  <h2><a NAME="Module">Module List</a></h2>  <table  border="1" cols="3" align="center">
+<tr>
+<td><b>Module Name</b> </td><td><b>C</b> </td><td><b>C++</b>  </td></tr>
+<tr>
+<td>Basic Types and Constants </td><td><a class="el" href="util_8c.html" title="Common Utility Function Set Header File.">util.c</a> </td><td><a class="el" href="util_8h.html" title="Common Utility Function Set Source File.">util.h</a>  </td></tr>
+<tr>
+<td>Unicode Character<br/>
+Properties and Names </td><td>uchar.h, uscript.h </td><td>C API  </td></tr>
+<tr>
+<td>Sets of Unicode Code Points and Strings </td><td>uset.h </td><td>icu::UnicodeSet  </td></tr>
+<tr>
+<td>Maps from Strings to Integer Values </td><td>(no C API) </td><td>icu::BytesTrie, icu::UCharsTrie  </td></tr>
+<tr>
+<td>Number Formatting </td><td>unum.h </td><td>icu::NumberFormat  </td></tr>
+<tr>
+<td>Number Spellout<br/>
+(Rule Based Number Formatting) </td><td>unum.h<br/>
+(use UNUM_SPELLOUT) </td><td>icu::RuleBasedNumberFormat  </td></tr>
+<tr>
+<td>Text Transformation<br/>
+(Transliteration) </td><td>utrans.h </td><td>icu::Transliterator  </td></tr>
+<tr>
+<td>Bidirectional Algorithm </td><td>ubidi.h </td><td>C API  </td></tr>
+<tr>
+<td>Arabic Shaping </td><td>ushape.h </td><td>C API  </td></tr>
+<tr>
+<td>Layout Engine/Complex Text Layout </td><td>loengine.h </td><td>icu::LayoutEngine,icu::ParagraphLayout  </td></tr>
+<tr>
+<td>ICU I/O </td><td>ustdio.h </td><td>ustream.h  </td></tr>
+</table>
+<p><em>This test page is generated from xxx.h</em> </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 10 2013 15:02:28 for WIZlib Library API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Mar 10 2013 15:02:27 for WIZlib Library API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

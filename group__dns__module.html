@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.3.1"/>
-<title>WIZlib Library API: Main Page</title>
+<title>WIZlib Library API: DNS</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -39,7 +39,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </script>
   <div id="navrow1" class="tabs">
     <ul class="tablist">
-      <li class="current"><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
@@ -79,45 +79,82 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">WIZlib Library API Documentation</div>  </div>
+<div class="title">DNS<div class="ingroups"><a class="el" href="group__protocol__module.html">Network Protocols</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1><a class="anchor" id="intro"></a>
-TEST</h1>
-<p><b>TEST</b> test</p>
-<ul>
-<li>abc </li>
-</ul>
-<h1><a class="anchor" id="Program"></a>
-TEST</h1>
-<ul>
-<li>abc</li>
-<li>abc</li>
-</ul>
-<div class="fragment"><div class="line">Test()</div>
-<div class="line">{</div>
-<div class="line">    Callback();</div>
-<div class="line">}</div>
-</div><!-- fragment --> <h1><a class="anchor" id="INOUTPUT"></a>
-TEST</h1>
-<ul>
-<li>acb</li>
-<li>abc </li>
-</ul>
-<h1><a class="anchor" id="CREATEINFO"></a>
-TEST</h1>
-<ul>
-<li>abc</li>
-<li>abc </li>
-</ul>
-<h1><a class="anchor" id="MODIFYINFO"></a>
-TEST</h1>
-<ul>
-<li>abc</li>
-<li>abc </li>
-</ul>
-</div></div><!-- contents -->
+
+<p>DNS(Domain Name System) Query.  
+<a href="#details">More...</a></p>
+<div class="dynheader">
+Collaboration diagram for DNS:</div>
+<div class="dyncontent">
+<center><table><tr><td><img src="group__dns__module.png" border="0" alt="" usemap="#group____dns____module"/>
+<map name="group____dns____module" id="group____dns____module">
+<area shape="rect" id="node2" href="group__protocol__module.html" title="&#45;." alt="" coords="5,5,133,32"/></map>
+</td></tr></table></center>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:gac42982cd854842ec3eb003e199056fb7"><td class="memItemLeft" align="right" valign="top">int8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dns__module.html#gac42982cd854842ec3eb003e199056fb7">dns_query</a> (uint8 sock, uint8 *domain, uint8 *ip)</td></tr>
+<tr class="memdesc:gac42982cd854842ec3eb003e199056fb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform DNS Query.  <a href="#gac42982cd854842ec3eb003e199056fb7">More...</a><br/></td></tr>
+<tr class="separator:gac42982cd854842ec3eb003e199056fb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<p>DNS(Domain Name System) Query. </p>
+<h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="gac42982cd854842ec3eb003e199056fb7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int8 dns_query </td>
+          <td>(</td>
+          <td class="paramtype">uint8&#160;</td>
+          <td class="paramname"><em>sock</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8 *&#160;</td>
+          <td class="paramname"><em>domain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8 *&#160;</td>
+          <td class="paramname"><em>ip</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Perform DNS Query. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sock</td><td>Socket number to use </td></tr>
+    <tr><td class="paramname">domain</td><td>Domain name string to resolve </td></tr>
+    <tr><td class="paramname">ip</td><td>The variable in which resolved IP address will be returned </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>RET_OK: Success </dd>
+<dd>
+RET_NOK: Error </dd></dl>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="dns_8c-example.html#a3">dns.c</a>.</dd>
+</dl>
+<p>Definition at line <a class="el" href="dns_8c_source.html#l00383">383</a> of file <a class="el" href="dns_8c_source.html">dns.c</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated on Sun Mar 10 2013 15:02:28 for WIZlib Library API by &#160;<a href="http://www.doxygen.org/index.html">
